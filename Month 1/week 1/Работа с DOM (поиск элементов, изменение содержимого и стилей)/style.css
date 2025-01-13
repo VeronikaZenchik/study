@@ -1,0 +1,25 @@
+body {
+background-color: beige;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#text{
+  color:black;
+  font-size: 30px;
+  text-align: left;
+
+}
+
+#button {
+  background-color:black;
+  color: blanchedalmond;
+  text-align: center;
+  font-size: 50px;
+  width: 300px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
