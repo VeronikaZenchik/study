@@ -3,16 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>События (обработка событий, делегирование)</title>
-  <style>
-    .error-message {
-      color: red;
-      font-size: 0.9em;
-      margin-top: 5px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <title>Работа с формами (получение данных, валидация)</title>
 </head>
 <body>
+<section>
   <form action="post" class="form">
 
     <label for="username" >Имя</label>
@@ -27,12 +22,14 @@
     <input class="password" id="password" placeholder="Password" type="password" >
     <div class="error-message" id="password-error"></div>
 
+    <label for="password-repeat" >Подтверждение пароля</label>
+    <input class="password-repeat" id="password-repeat" placeholder="Password" type="password" >
+    <div class="error-message" id="password-error-repeat"></div>
+
     <button class="button" type="submit">Отправить</button>
   </form>
-
+</section>
 
   <script src="script.js"></script>
 </body>
 </html>
-
-

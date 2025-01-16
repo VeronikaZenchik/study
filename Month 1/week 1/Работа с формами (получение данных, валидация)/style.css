@@ -1,0 +1,30 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-color: #3d29aa;
+  color: #e4cece;
+}
+
+.section{
+  text-align: center;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+input {
+  background-color: #c1a2db; 
+  color: #585454;
+}
+
+.button{
+  background-color: #a449f3;
+  color: #f0e3e3;
+}
