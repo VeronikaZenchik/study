@@ -3,4 +3,28 @@ body {
   background-color: #d484a3;
   color: #313383;
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Добавлено для вертикального выравнивания */
+}
+
+button {
+  background-color: #080606;
+  color: #eedede;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px; /* Добавлено для отступа */
+}
+
+.container {
+  text-align: center;
+}
+
+#user-image {
+  border-radius: 50%; /* Делаем изображение круглым */
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
 }
