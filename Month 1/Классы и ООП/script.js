@@ -4,6 +4,7 @@ class User {
     this.surname = surname
     this.age = age
   }
+  
   greet() {
     return `Имя: ${this.name}, Фамилия: ${this.surname}, Возраст: ${this.age}`
   }
