@@ -164,29 +164,7 @@ function* stringGenerator (arr) {
     }
     }
 }
-const string = stringGenerator(['apple', 'banana', 'cherry'];);
+const string = stringGenerator(['apple', 'banana', 'cherry']);
 for (let i = 0; i < 8; i++) {
   console.log(string.next().value); 
-}
-
-
-// Задача 3: Генератор случайных чисел с ограничением
-
-// Создайте генератор, который будет генерировать случайные числа от 1 до 50. Однако, если сгенерированное число уже было сгенерировано ранее, оно не должно возвращаться снова. Выведите 10 уникальных случайных чисел.
-// Подсказка: Используйте массив для хранения уже сгенерированных чисел и проверяйте, было ли число сгенерировано ранее, прежде чем возвращать его.
-
-function* uniqueRandomNumberGenerator(min, max) {
-  let arrResult = []
-  while (true) {
-    const num = Math.floor(Math.random() * (max - min + 1)) + min;
-      arrResult[num]
-      if(let items of arrResult){
-        yield items
-      }
-    }
-  }
-
-const gener = uniqueRandomNumberGenerator(1, 100);
-for (let i = 0; i < 10; i++) {
-  console.log(gener.next().value); 
 }
