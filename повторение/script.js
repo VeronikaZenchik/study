@@ -20,12 +20,12 @@ console.log(swapped);
 
 
 
-
-
 // 2. Создайте массив, объединив два других массива с помощью spread
 
 const arrayOne = [1, 2, 30]
 const arrayTwo = [9,85,42]
 const mainArray = [...arrayOne, ...arrayTwo]
 console.log(mainArray);
+
+
 
