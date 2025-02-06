@@ -69,3 +69,31 @@ class Dog extends Animal {
 
 const dog = new Dog("Шарик", "Овчарка");
 dog.speak();
+
+
+
+// Создаем генератор, который перебирает ключи объекта
+
+
+function* keyIterator(obj) {
+  const keys = Object.keys(obj);
+  for (const key of keys) {
+    yield key;
+  }
+}
+
+// Создаем объект
+const catObj = {
+  name: "Тимоша",
+  breed: "Британец",
+  age: 3
+};
+
+// Используем генератор
+const generator = keyIterator(catObj);
+
+// Перебираем ключи объекта
+for (const key of generator) {
+  console.log(key); 
+}
+
