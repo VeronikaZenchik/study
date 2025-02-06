@@ -97,3 +97,71 @@ for (const key of generator) {
   console.log(key); 
 }
 
+
+
+// Деструктуризация и spread/rest:
+// Напишите функцию, которая принимает массив и возвращает новый массив, где первый и последний элементы поменяны местами
+
+function takeMe(array) {
+  if (array.length <= 1) {
+    return array;
+  }
+
+  // Деструктурируем первый и последний элементы массива
+  const [first, ...middle] = array;
+  const last = array[array.length - 1];
+
+  // Возвращаем новый массив с поменянными местами первым и последним элементами
+  return [last, ...middle, first];
+}
+
+const originalArray = [1, 2, 3, 4, 5];
+const swappedArray = swapFirstAndLast(originalArray);
+console.log(swappedArray);
+
+
+
+// Классы:
+// Создайте класс Car с методами start и stop. Затем создайте класс ElectricCar, который наследует Car и добавляет метод charge.
+
+
+class Car {
+  constructor(brand, model) {
+    this.brand = brand;
+    this.model = model;
+    this.isRunning = false;
+  }
+  start() {
+    this.isRunning = true;
+    console.log(`${this.brand} ${this.model} запущен.`);
+}
+
+stop() {
+    this.isRunning = false;
+    console.log(`${this.brand} ${this.model} остановлен.`);
+}
+  
+}
+
+class ElectricCar extends Car {
+  constructor(brand, model, batteryCapacity) {
+    super(brand, model)
+    this.batteryCapacity = batteryCapacity; // Вместимость батареи
+  }
+  charge() {
+    console.log(`${this.brand} ${this.model} заряжается. Вместимость батареи: ${this.batteryCapacity} кВтч.`);
+  }
+}
+
+
+// Пример использования
+const myCar = new Car('Toyota', 'Camry');
+myCar.start(); // Вывод: Toyota Camry запущен.
+myCar.stop();  // Вывод: Toyota Camry остановлен.
+
+const myElectricCar = new ElectricCar('Tesla', 'Model S', 100);
+myElectricCar.start(); // Вывод: Tesla Model S запущен.
+myElectricCar.charge(); // Вывод: Tesla Model S заряжается. Вместимость батареи: 100 кВтч.
+myElectricCar.stop();  // Вывод: Tesla Model S остановлен.
+
+
