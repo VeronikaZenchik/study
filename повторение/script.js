@@ -29,3 +29,43 @@ console.log(mainArray);
 
 
 
+// Практика:
+// Создайте класс Animal с методом speak. Затем создайте класс Dog, который наследует Animal и переопределяет метод speak.
+
+
+class Animal {
+  constructor(name) {
+    this.name =  name
+  }
+  speak(){
+  console.log(`${this.name} издает звук`);
+  }
+  
+}
+
+class Cat extends Animal {
+  constructor(name, breed) {
+    super(name)
+    this.breed = breed
+  }
+  speak() {
+    console.log(`${this.name} с породой: ${this.breed} мяукает`);
+  }
+}
+
+const cat = new Cat ("Тимоша", "Британец")
+cat.speak()
+
+
+class Dog extends Animal {
+  constructor(name, breed) {
+    super(name);
+    this.breed = breed;
+  }
+  speak() {
+    console.log(`${this.name} с породой: ${this.breed} лает`);
+  }
+}
+
+const dog = new Dog("Шарик", "Овчарка");
+dog.speak();
