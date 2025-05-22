@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +7,20 @@
 </head>
 <body>
   <header>
-    <h1>ФИО: Иванова Анна Сергеевна</h1>
-    <h2>Должность: Frontend-разработчик</h2>
-    <p>Увлечена созданием удобных и современных веб-интерфейсов. Имею опыт верстки адаптивных сайтов и работы с JavaScript.</p>
+    <h1>Иванова Анна Сергеевна</h1>
   </header>
+  <p><strong>Frontend-разработчик</strong></p>
+  <p>Увлечена созданием удобных и современных веб-интерфейсов. Имею опыт верстки адаптивных сайтов и работы с JavaScript.</p>
   <main>
   <section id="experience">
     <h3>Опыт работы</h3>
     <ul id="work-experience">
       <li>
-        <p>Компания "TechSolutions" (2022–2023)</p>
+  <strong>Компания "TechSolutions" (2022–2023)</strong>
+  <ul>
+    <li>Должность: Junior Frontend Developer</li>
+    <li>Обязанности:
         <ul>
-          <p>Должность: Junior Frontend Developer</p>
-          <p>Обязанности:</p>
           <li>
             Верстка лендингов по макетам Figma.
           </li>
@@ -32,9 +33,9 @@
         </ul>
       </li>
       <li>
+        <p>Фриланс (2021–2022)</p>
+        <p>Проекты:</p>
         <ul>
-          <p>Фриланс (2021–2022)</p>
-          <p>Проекты:</p>
           <li>
             Создание интернет-магазина для клиента (HTML/CSS/JS).
           </li>
@@ -47,9 +48,50 @@
   </section>
   <section id="education">
     <h3>Образование</h3>
-    
+    <p>Университет "ИТМО" (2018–2022)</p>
+    <p>Направление: Программная инженерия</p>
+    <p>Курсы:</p>
+    <ul>
+      <li>«Современный JavaScript» (Stepik).</li>
+      <li>«React для начинающих» (Udemy).</li>
+    </ul>
+  </section>
+  <section id="skills">
+    <h3>Навыки </h3>
+    <ul>
+      <li>HTML5 / CSS3 (Flexbox, Grid, анимации)</li>
+      <li>JavaScript (ES6+, работа с DOM).</li>
+      <li>React (базовые знания).</li>
+      <li>Git / GitHub.</li>
+      <li>Figma (нарезка макетов).</li>
+    </ul>
+  </section>
+  <section id="contacts">
+    <form action="" method="get">
+      <fieldset>
+        <legend>Контактная форма</legend>
+      <p>
+        <label for="name">Имя:</label>
+        <input type="text" name="name" id="name" required>
+      </p>
+      <p>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+      </p>
+      <label for="message">Сообщение:</label>
+      <textarea name="text" id="message" placeholder="Сообщение"></textarea>
+      <button type="submit">Отправить</button>
+      </fieldset>
+
+    </form>
   </section>
 </main>
-  <footer></footer>
+  <footer>
+    <h3>Контакты</h3>
+    <p>Email: <a href="mailto:anna@example.com">anna@example.com</a></p>
+    <p>Телефон: <a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
+    <p>GitHub: <a href="https://github.com/anna-ivanova">github.com/anna-ivanova</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/anna-ivanova">linkedin.com/in/anna-ivanova</a></p>
+  </footer>
 </body>
 </html>
