@@ -25,14 +25,19 @@ h1{
   background: white;
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  overflow: hidden; 
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .featured {
   grid-column: span 2;
 }
 
-h3{
+.card:hover{
+    transform: translateY(-30px);
+}
+
+h2{
   text-align: center;
   color: rgb(52, 112, 84);
   font-size: 45px;
@@ -41,10 +46,11 @@ h3{
 
 img{
   width: 100%;
-  aspect-ratio: 15/9;
+  aspect-ratio: 16/9;
   object-fit: cover;
   border-radius: 20px;
   margin-bottom: 20px;
+  transition: transform 0.3s ease;
 }
 
 img:hover {
@@ -54,7 +60,7 @@ img:hover {
 p{
   color:rgb(41, 102, 75);
   text-shadow: 21px;
-  font-size: 30px;
+  font-size: 25px;
   word-break: keep-all;
   margin-bottom: 20px;
 }
@@ -66,16 +72,20 @@ button{
   width: 150px;
   height: 40px;
   cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 button:hover {
   transform: scale(1.03);
+  background: white;
+  box-shadow: 0 4px 12px rgba(42, 100, 81, 0.3);
+}
+
+button:active {
+  transform: scale(0.95);
   background: #45a049;
 }
 
-img, button {
-  transition: transform 0.5s ease;
-}
 
 @media (max-width: 768px) {
   .card {
