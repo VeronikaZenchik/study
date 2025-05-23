@@ -1,0 +1,42 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  text-align: center;
+  color: rgb(151, 62, 211);
+  font-size: 100px;
+  margin-bottom: 20px;
+}
+
+#gallery{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  aspect-ratio:  3/4;
+  object-fit: cover;
+  border-radius: 8px;
+  transition-duration: 0.5s ease;
+}
+
+img:hover {
+  transform: scale(1.03);
+}
+
+@media (max-width: 600px) {
+  #gallery {
+    grid-template-columns: 1fr;
+  }
+  h1 {
+    font-size: 60px;
+  }
+}
+
